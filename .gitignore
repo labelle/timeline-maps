@@ -1,0 +1,9 @@
+logs/*
+!.gitkeep
+sftp-config.json
+tmp
+.DS_Store
+doc/
+apple-touch-icon.png
+tile-wide.png
+tile.png
