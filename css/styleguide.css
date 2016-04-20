@@ -155,64 +155,64 @@ a.brand-color-4:hover, .brand-color-4-hover {
 /* Inverse */
 /* --------------------------- TEXT HIGHLIGHTS --------------------------- */
 /* Mozilla based browsers */
-p.highlight,
+/*p.highlight,
 ::-moz-selection {
   background: #00a651;
-  color: #FFFFFF; }
+  color: #FFFFFF; }*/
 
 /* Works in Safari */
-p.highlight,
+/*p.highlight,
 ::selection {
   background: #00a651;
-  color: #FFFFFF; }
+  color: #FFFFFF; }*/
 
 /* Mozilla based browsers */
-p.highlight-1,
+/*p.highlight-1,
 .brand-color-1-highlight::-moz-selection {
   background: #00a651;
-  color: #FFFFFF; }
+  color: #FFFFFF; }*/
 
 /* Works in Safari */
-p.highlight-1,
+/*p.highlight-1,
 .brand-color-1-highlight::selection {
   background: #00a651;
-  color: #FFFFFF; }
+  color: #FFFFFF; }*/
 
 /* Mozilla based browsers */
-p.highlight-2,
+/*p.highlight-2,
 .brand-color-2-highlight::-moz-selection {
   background: #2e3192;
-  color: #FFFFFF; }
+  color: #FFFFFF; }*/
 
 /* Works in Safari */
-p.highlight-2,
+/*p.highlight-2,
 .brand-color-2-highlight::selection {
   background: #2e3192;
-  color: #FFFFFF; }
+  color: #FFFFFF; }*/
 
 /* Mozilla based browsers */
-p.highlight-3,
+/*p.highlight-3,
 .brand-color-3-highlight::-moz-selection {
   background: #00aeef;
-  color: #FFFFFF; }
+  color: #FFFFFF; }*/
 
 /* Works in Safari */
-p.highlight-3,
+/*p.highlight-3,
 .brand-color-3-highlight::selection {
   background: #00aeef;
-  color: #FFFFFF; }
+  color: #FFFFFF; }*/
 
 /* Mozilla based browsers */
-p.highlight-4,
+/*p.highlight-4,
 .brand-color-4-highlight::-moz-selection {
   background: #ec008c;
-  color: #FFFFFF; }
+  color: #FFFFFF; }*/
 
 /* Works in Safari */
-p.highlight-4,
+/*p.highlight-4,
 .brand-color-4-highlight::selection {
   background: #ec008c;
-  color: #FFFFFF; }
+  color: #FFFFFF; }*/
 
 /* --------------------------- BUTTON HIGHLIGHTS --------------------------- */
 a:hover span {
