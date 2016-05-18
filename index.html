@@ -11,11 +11,15 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
         <link rel="stylesheet" href="css/elements.css">
-        <link rel="stylesheet" href="css/styleguide.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+        <link rel="stylesheet" href="css/vertical-timeline.css"> <!-- Resource style -->
+        <link rel="stylesheet" href="css/horizontal-timeline.css"> <!-- Resource style -->
+
+       <!--  <link rel="stylesheet" href="css/styleguide.css">
+        <link rel="stylesheet" href="css/main.css"> -->
+        <script src="js/vendor/modernizr.js"></script> <!-- Modernizr -->
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -27,12 +31,12 @@
 
                 <div class="container">
                   <div class="navbar-header">
-                    <a class="navbar-brand" href="/charts" style="color: #000;">OppenheimerFunds Chart Demos</a>
+                    <a class="navbar-brand" href="/" style="color: #000;">OppenheimerFunds Timelines and Maps Demos</a>
                   </div>
                   <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                      <li class="active"><a href="" style="color: #000;">Highcharts</a></li>
-                      <li><a href="/charts/chartJS.html" style="color: #000;">Chart.js</a></li>
+                      <li class="active"><a href="/" style="color: #000;">Timelines</a></li>
+                      <li><a href="maps.html" style="color: #000;">Maps</a></li>
                     </ul>
                   </div><!--/.nav-collapse -->
                 </div><!--/.container-fluid -->
@@ -42,151 +46,252 @@
         <div class="evo-space-big"></div>
 
         <div class="container">
+            <div class="evo-space-23"></div>
+            <p class="evo-subheader-10">jQuery Rain</p>
+            <p class="evo-header-29 evo-no-line">Horizontal Timeline</p>
+        </div>
+
+            <div class="row">
     
-
-             <div class="row">
                 <div class="col-xs-12">
-                     <!-- Add your site or application content here -->
-                    <h2 class="evo-header-big">Highcharts</h2>
-                    <div class="evo-space-bigger"></div>
-                </div>
-            </div>
 
 
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2 class="evo-header-smaller">Pie Chart</h2>
-                    <div class="evo-space"></div>
-                    <div id="pie-chart" style="min-width: 310px; height: 400px; margin: 0 auto;"></div>
-                    <div class="evo-space"></div>
-                    <div class="evo-line-1"></div>
-                    <div class="evo-space-smallest"></div>
-                    <p class="evo-text-smaller evo-gray-30">Sources: OFI Global Asset Management, Pensions & Investments</p>
+                    <section class="cd-horizontal-timeline">
+                        <div class="timeline">
+                            <div class="events-wrapper">
+                                <div class="events">
+                                    <ol>
+                                        <li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
+                                        <li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
+                                        <li><a href="#0" data-date="20/04/2014">20 Mar</a></li>
+                                        <li><a href="#0" data-date="20/05/2014">20 May</a></li>
+                                        <li><a href="#0" data-date="09/07/2014">09 Jul</a></li>
+                                        <li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
+                                        <li><a href="#0" data-date="15/09/2014">15 Sep</a></li>
+                                        <li><a href="#0" data-date="01/11/2014">01 Nov</a></li>
+                                        <li><a href="#0" data-date="10/12/2014">10 Dec</a></li>
+                                        <li><a href="#0" data-date="19/01/2015">29 Jan</a></li>
+                                        <li><a href="#0" data-date="03/03/2015">3 Mar</a></li>
+                                    </ol>
+
+                                    <span class="filling-line" aria-hidden="true"></span>
+                                </div> <!-- .events -->
+                            </div> <!-- .events-wrapper -->
+                                
+                            <ul class="cd-timeline-navigation">
+                                <li><a href="#0" class="prev inactive">Prev</a></li>
+                                <li><a href="#0" class="next">Next</a></li>
+                            </ul> <!-- .cd-timeline-navigation -->
+                        </div> <!-- .timeline -->
+
+                        <div class="events-content">
+                            <ol>
+                                <li class="selected" data-date="16/01/2014">
+                                    <h2>Horizontal Timeline</h2>
+                                    <em>January 16th, 2014</em>
+                                    <p> 
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                    </p>
+                                </li>
+
+                                <li data-date="28/02/2014">
+                                    <h2>Event title here</h2>
+                                    <em>February 28th, 2014</em>
+                                    <p> 
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                    </p>
+                                </li>
+
+                                <li data-date="20/04/2014">
+                                    <h2>Event title here</h2>
+                                    <em>March 20th, 2014</em>
+                                    <p> 
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                    </p>
+                                </li>
+
+                                <li data-date="20/05/2014">
+                                    <h2>Event title here</h2>
+                                    <em>May 20th, 2014</em>
+                                    <p> 
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                    </p>
+                                </li>
+
+                                <li data-date="09/07/2014">
+                                    <h2>Event title here</h2>
+                                    <em>July 9th, 2014</em>
+                                    <p> 
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                    </p>
+                                </li>
+
+                                <li data-date="30/08/2014">
+                                    <h2>Event title here</h2>
+                                    <em>August 30th, 2014</em>
+                                    <p> 
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                    </p>
+                                </li>
+
+                                <li data-date="15/09/2014">
+                                    <h2>Event title here</h2>
+                                    <em>September 15th, 2014</em>
+                                    <p> 
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                    </p>
+                                </li>
+
+                                <li data-date="01/11/2014">
+                                    <h2>Event title here</h2>
+                                    <em>November 1st, 2014</em>
+                                    <p> 
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                    </p>
+                                </li>
+
+                                <li data-date="10/12/2014">
+                                    <h2>Event title here</h2>
+                                    <em>December 10th, 2014</em>
+                                    <p> 
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                    </p>
+                                </li>
+
+                                <li data-date="19/01/2015">
+                                    <h2>Event title here</h2>
+                                    <em>January 19th, 2015</em>
+                                    <p> 
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                    </p>
+                                </li>
+
+                                <li data-date="03/03/2015">
+                                    <h2>Event title here</h2>
+                                    <em>March 3rd, 2015</em>
+                                    <p> 
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                    </p>
+                                </li>
+                            </ol>
+                        </div> <!-- .events-content -->
+
+
+                    <!-- <div class="container">
                     <div class="evo-space-biggest"></div>
-                </div>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <h2 class="evo-header-smaller">JavaScript</h2>
+                            <style type="text/css">
+                              .gist-data {max-height: 400px;}
+                            </style>
+                            <script src="https://gist.github.com/tomdanny/25e015452c637ccb12a75803b7787a6e.js"></script>
+                          </div>
+                        </div>
+                    </div> -->
+
+                    </section>
+
+                </div> <!-- column -->
+
+            <div class="evo-space-bigger"></div>
+
+            </div> <!-- row -->
+
+
+            
+            <div class="container">
+                <div class="evo-space-25"></div>
+                <p class="evo-subheader-10">jQuery Rain</p>
+                <p class="evo-header-29 evo-no-line">Vertical Timeline</p>
             </div>
 
 
             <div class="row">
                 <div class="col-xs-12">
-                    <h2 class="evo-header-smaller">Vertical Bar</h2>
-                    <div class="evo-space"></div>
-                    <div id="vertical-bar" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-                    <div class="evo-space"></div>
-                    <div class="evo-line-1"></div>
-                    <div class="evo-space-smallest"></div>
-                    <p class="evo-text-smaller evo-gray-30">Sources: OFI Global Asset Management, Pensions & Investments</p>
-                    <div class="evo-space-biggest"></div>
+                        <section id="cd-timeline" class="cd-container">
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-picture">
+                                <img src="img/cd-icon-picture.svg" alt="Picture">
+                            </div> <!-- cd-timeline-img -->
+
+                            <div class="cd-timeline-content">
+                                <h2>Title of section 1</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                                <a href="#0" class="cd-read-more">Read more</a>
+                                <span class="cd-date">Jan 14</span>
+                            </div> <!-- cd-timeline-content -->
+                        </div> <!-- cd-timeline-block -->
+
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-movie">
+                                <img src="img/cd-icon-movie.svg" alt="Movie">
+                            </div> <!-- cd-timeline-img -->
+
+                            <div class="cd-timeline-content">
+                                <h2>Title of section 2</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+                                <a href="#0" class="cd-read-more">Read more</a>
+                                <span class="cd-date">Jan 18</span>
+                            </div> <!-- cd-timeline-content -->
+                        </div> <!-- cd-timeline-block -->
+
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-picture">
+                                <img src="img/cd-icon-picture.svg" alt="Picture">
+                            </div> <!-- cd-timeline-img -->
+
+                            <div class="cd-timeline-content">
+                                <h2>Title of section 3</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+                                <a href="#0" class="cd-read-more">Read more</a>
+                                <span class="cd-date">Jan 24</span>
+                            </div> <!-- cd-timeline-content -->
+                        </div> <!-- cd-timeline-block -->
+
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-location">
+                                <img src="img/cd-icon-location.svg" alt="Location">
+                            </div> <!-- cd-timeline-img -->
+
+                            <div class="cd-timeline-content">
+                                <h2>Title of section 4</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                                <a href="#0" class="cd-read-more">Read more</a>
+                                <span class="cd-date">Feb 14</span>
+                            </div> <!-- cd-timeline-content -->
+                        </div> <!-- cd-timeline-block -->
+
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-location">
+                                <img src="img/cd-icon-location.svg" alt="Location">
+                            </div> <!-- cd-timeline-img -->
+
+                            <div class="cd-timeline-content">
+                                <h2>Title of section 5</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+                                <a href="#0" class="cd-read-more">Read more</a>
+                                <span class="cd-date">Feb 18</span>
+                            </div> <!-- cd-timeline-content -->
+                        </div> <!-- cd-timeline-block -->
+
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-movie">
+                                <img src="img/cd-icon-movie.svg" alt="Movie">
+                            </div> <!-- cd-timeline-img -->
+
+                            <div class="cd-timeline-content">
+                                <h2>Final Section</h2>
+                                <p>This is the content of the last section</p>
+                                <span class="cd-date">Feb 26</span>
+                            </div> <!-- cd-timeline-content -->
+                        </div> <!-- cd-timeline-block -->
+                    </section> <!-- cd-timeline -->
                 </div>
             </div>
 
 
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2 class="evo-header-smaller">Horizontal Bar</h2>
-                    <div class="evo-space"></div>
-                    <div id="horizontal-bar" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-                    <div class="evo-space"></div>
-                    <div class="evo-line-1"></div>
-                    <div class="evo-space-smallest"></div>
-                    <p class="evo-text-smaller evo-gray-30">Sources: OFI Global Asset Management, Pensions & Investments</p>
-                    <div class="evo-space-biggest"></div>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2 class="evo-header-smaller">Stacked Bar</h2>
-                    <div class="evo-space"></div>
-                    <div id="stacked-bar" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-                    <div class="evo-space"></div>
-                    <div class="evo-line-1"></div>
-                    <div class="evo-space-smallest"></div>
-                    <p class="evo-text-smaller evo-gray-30">Sources: OFI Global Asset Management, Pensions & Investments</p>
-                    <div class="evo-space-biggest"></div>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2 class="evo-header-smaller">Line Chart</h2>
-                    <div class="evo-space"></div>
-                    <div id="line-chart" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-                    <div class="evo-space"></div>
-                    <div class="evo-line-1"></div>
-                    <div class="evo-space-smallest"></div>
-                    <p class="evo-text-smaller evo-gray-30">Sources: OFI Global Asset Management, Pensions & Investments</p>
-                    <div class="evo-space-biggest"></div>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2 class="evo-header-smaller">Doughnut Chart</h2>
-                    <div class="evo-space"></div>
-                    <div id="doughnut-chart" style="min-width: 310px; height: 400px; margin: 0 auto;"></div>
-                    <div class="evo-space"></div>
-                    <div class="evo-line-1"></div>
-                    <div class="evo-space-smallest"></div>
-                    <p class="evo-text-smaller evo-gray-30">Sources: OFI Global Asset Management, Pensions & Investments</p>
-                    <div class="evo-space-biggest"></div>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2 class="evo-header-smaller">Bubble Chart</h2>
-                    <div class="evo-space"></div>
-                    <div id="bubble-chart" style="min-width: 310px; height: 400px; margin: 0 auto;"></div>
-                    <div class="evo-space"></div>
-                    <div class="evo-line-1"></div>
-                    <div class="evo-space-smallest"></div>
-                    <p class="evo-text-smaller evo-gray-30">Sources: OFI Global Asset Management, Pensions & Investments</p>
-                    <div class="evo-space-biggest"></div>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2 class="evo-header-smaller">Area Chart</h2>
-                    <div class="evo-space"></div>
-                    <div id="area-chart" style="min-width: 310px; height: 400px; margin: 0 auto;"></div>
-                    <div class="evo-space"></div>
-                    <div class="evo-line-1"></div>
-                    <div class="evo-space-smallest"></div>
-                    <p class="evo-text-smaller evo-gray-30">Sources: OFI Global Asset Management, Pensions & Investments</p>
-                    <div class="evo-space"></div>
-                </div>
-            </div>
-
-             <div class="row">
-              <div class="col-xs-12">
-                <h2 class="evo-header-smaller">JavaScript</h2>
-                <style type="text/css">
-                  .gist-data {max-height: 400px;}
-                </style>
-                <script src="https://gist.github.com/tomdanny/25e015452c637ccb12a75803b7787a6e.js"></script>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-12">
-                <h2 class="evo-header-smaller">JSON</h2>
-                <style type="text/css">
-                  .gist-data {max-height: 400px;}
-                </style>
-                <script src="https://gist.github.com/tomdanny/0b6b957126c0cc8043972a64217d9a20.js"></script>
-              </div>
-            </div>
-
-        </div> <!-- container -->
-
-
+        <!-- </div> --> <!-- container -->
 
 
 
@@ -196,14 +301,13 @@
 
         <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.4.js"><\/script>')</script>
+        <script src="js/vendor/jquery.mobile.custom.min.js"></script>
 
         
-        <!-- this is script for highcharts -->
-        <script src="js/highcharts.js"></script>
-        <script src="js/highcharts-more.js"></script>
-        <script src="js/main-highcharts.js"></script>
+        <!-- this is script for timeline -->
+        <script src="js/horizontal.js"></script>
+        <script src="js/vertical.js"></script>
 
 
 
